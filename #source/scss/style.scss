@@ -1,0 +1,57 @@
+// ШРИФТ ПО УМОЛЧАНИЮ
+body{
+    font-family: 'RobotoR';
+}
+// ШРИФТЫ
+@font-face{
+    font-family: 'RobotoM';
+    src:url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face{
+    font-family: 'RobotoR';
+    src:url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Revalia';
+    src:url('../fonts/Revalia-Regular.ttf');
+}
+// ОБНУЛЕНИЕ
+@import "null.scss";
+
+//МИКСИНЫ
+@import "mixin.scss";
+
+// ОБОЛОЧКА 
+.wrapper{
+    background-color: #EEEFF1;
+    margin: 0 auto;
+}
+
+// ОСНОВНАЯ СЕТКА (Выравнивание пример: 1170px)
+.container{
+    margin:0 auto;
+    max-width:1140px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+// СТАНДАРТНЫЕ ПЕРЕМЕННЫЕ
+.active{
+    display:block;
+}
+
+.disable{
+    display:none;
+}
+// ПЕРЕМЕННЫЕ ПРОЕКТА
+
+// ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ
+@import "head.scss";
+@import "about-me.scss";
+@import "skills.scss";
+@import "images.scss";
+@import "contacts.scss";
+@import "projects.scss";
+@import "mail-fixed.scss";
